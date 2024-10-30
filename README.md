@@ -1,4 +1,4 @@
-Luis Salgado
-Eduardo Mendoza
-Pablo Pereira
-Felipe Bueno
+Luis Salgado,
+Eduardo Mendoza,
+Pablo Pereira,
+Felipe Bueno,
