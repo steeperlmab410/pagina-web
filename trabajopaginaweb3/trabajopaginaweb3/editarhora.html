@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Hora Agendada</title>
+    <link rel="stylesheet" href="css/estilos.css"> <!-- Puedes enlazar tu archivo CSS aquí -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #555;
+        }
+        input, textarea, select {
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .message {
+            text-align: center;
+            margin-top: 20px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Editar Hora Agendada</h2>
+    <form action="procesar_edicion_hora.php" method="POST">
+        <label for="id_hora">ID de la Hora:</label>
+        <input type="text" id="id_hora" name="id_hora" required placeholder="Ingrese el ID de la hora a editar">
+
+        <label for="fecha_nueva">Nueva Fecha:</label>
+        <input type="date" id="fecha_nueva" name="fecha_nueva" required>
+
+        <label for="hora_nueva">Nueva Hora:</label>
+        <input type="time" id="hora_nueva" name="hora_nueva" required>
+
+        <label for="motivo_nuevo">Nuevo Motivo:</label>
+        <textarea id="motivo_nuevo" name="motivo_nuevo" rows="4" placeholder="Ingrese el nuevo motivo para la consulta"></textarea>
+
+        <button type="submit">Guardar Cambios</button>
+    </form>
+    <div class="message">
+        <!-- Aquí puedes mostrar mensajes de éxito o error -->
+    </div>
+</div>
+
+</body>
+</html>

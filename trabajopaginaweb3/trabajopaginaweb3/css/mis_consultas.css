@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.nav-button a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.nav-button a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#mis-consultas {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background-color: #fff;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f8f9fa;
+    color: #333;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+.acciones {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+/* Estilos unificados para ambos botones */
+.btn-cancelar, .btn-actualizar {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    background-color: #dc3545; /* Color rojo para ambos botones */
+    color: #fff;
+}
+
+.btn-cancelar:hover, .btn-actualizar:hover {
+    background-color: #c82333; /* Color más oscuro al pasar el mouse */
+}
+
+.mensaje {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos para el formulario de actualización */
+#actualizar-consulta {
+    width: 80%;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#actualizar-consulta form {
+    display: flex;
+    flex-direction: column;
+}
+
+#actualizar-consulta label {
+    margin-top: 1rem;
+    color: #333;
+    font-weight: bold;
+}
+
+#actualizar-consulta input,
+#actualizar-consulta textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+#actualizar-consulta textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #mis-consultas {
+        width: 95%;
+        padding: 1rem;
+    }
+}
